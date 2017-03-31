@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Segunda aplicacion móvil</title>
+
+<!-- grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!-- grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+</head> 
+ 
+ 
+ <body onLoad="MM_preloadImages('imagenes/historia1.jpg','imagenes/cris.png','imagenes/gama.png','imagenes/fe.png','imagenes/ro.png')">
+     
+     <div data-role="page" id="Principal" data-theme="b">
+      <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+        <h1> Telefonia celular  </h1>
+      </div>
+      <div data-role="main" class="ui-content">
+       </div>
+      <div>
+      
+        <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-b">
+        <li class="ui-first-child ui-last-child">
+           <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+              <h2> ¿Qué es un teléfono celular?  </h2>
+              <p> Definicion</p>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+             <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2> Historia del celular  </h2>
+               <p>  Evolución</p>
+              </a>
+             </li>
+             <li class="ui-first-child ui-last-child">
+               <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2> Clasificación</h2>
+               <p> Muestra </p>
+              </a>
+            </li>
+            <li class="ui-first-child ui-last-child">
+               <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2> Compañia</h2>
+               <p> Muestra las compañias</p>
+             </a>
+           </li>
+           <li class="ui-first-child ui-last-child">
+               <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+               <h2> Celulares del Futuro</h2>
+               <p> Muestra los telefonos del futuro </p>
+             </a>
+             </li>
+           </ul>
+           </div>
+           <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cla.png" alt="cla" title="cla" id="wows1_0"/></li>
+		<li><img src="data1/images/cris.png" alt="cris" title="cris" id="wows1_1"/></li>
+		<li><img src="data1/images/curvas.png" alt="curvas" title="curvas" id="wows1_2"/></li>
+		<li><img src="data1/images/fa.png" alt="fa" title="fa" id="wows1_3"/></li>
+		<li><img src="data1/images/gama.png" alt="gama" title="gama" id="wows1_4"/></li>
+		<li><img src="data1/images/historia2.jpg" alt="historia2" title="historia2" id="wows1_5"/></li>
+		<li><img src="data1/images/iphone.png" alt="iphone" title="iphone" id="wows1_6"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/logo.png" alt="http://wowslider.com/" title="logo" id="wows1_7"/></a></li>
+		<li><img src="data1/images/nokia.png" alt="nokia" title="nokia" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cla"><span><img src="data1/tooltips/cla.png" alt="cla"/>1</span></a>
+		<a href="#" title="cris"><span><img src="data1/tooltips/cris.png" alt="cris"/>2</span></a>
+		<a href="#" title="curvas"><span><img src="data1/tooltips/curvas.png" alt="curvas"/>3</span></a>
+		<a href="#" title="fa"><span><img src="data1/tooltips/fa.png" alt="fa"/>4</span></a>
+		<a href="#" title="gama"><span><img src="data1/tooltips/gama.png" alt="gama"/>5</span></a>
+		<a href="#" title="historia2"><span><img src="data1/tooltips/historia2.jpg" alt="historia2"/>6</span></a>
+		<a href="#" title="iphone"><span><img src="data1/tooltips/iphone.png" alt="iphone"/>7</span></a>
+		<a href="#" title="logo"><span><img src="data1/tooltips/logo.png" alt="logo"/>8</span></a>
+		<a href="#" title="nokia"><span><img src="data1/tooltips/nokia.png" alt="nokia"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">image slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+           <div data-role="footer" align="center" data-theme="b" data-position="fixed">
+            <div> 
+                <img src="imagenes/icon.png" width="46" height="46">
+            </div>
+            <div>
+               <h4> Aplicacion Dos </h4>
+               <h4> Rosa Maria Canales Maximiliano </h4>
+            </div>
+           </div>
+           </div>
+ <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1> DEFINICIÓN </h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Foto  </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/icon.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div> 
+         <h2> Un teléfono móvil o celular es un teléfono portátil que puede hacer y recibir llamadas a través de una portadora de radiofrecuencia mientras el usuario se está moviendo dentro de un área de servicio telefónico. El teléfono es un dispositivo de telecomunicación diseñado para transmitir señales acústicas a distancia por medio de señales eléctricas.  </h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/cris.png',1)"><img src="imagenes/adri.png" width="190" height="176" id="Image14"></a></p>
+         
+               </div>
+              </div> 
+       <div data-role="footer" data-theme="b" data-position="fixed">
+                <h4> Aplicacion Dos, RMCM </h4>
+              </div>
+             </div>
+            
+            
+ <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1>Historia del telefono celular </h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Foto  </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/historia1.jpg" width="50%" height="50%">
+           </div>
+          </div>
+         </div><h2> El 3 de abril de 1973, Martín Cooper directivo de Motorola realizó la primera llamada desde un teléfono móvil del proyecto DynaTAC 8000X desde una calle de Nueva York. precisamente a su mayor rival en el sector de telefonía: Joel Engel, de los Bell Labs de AT&T. </h2>
+         <h2>. </h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/historia1.jpg',1)"><img src="imagenes/evolucion.png" width="150" height="150" id="Image15"></a></p>
+               </div>
+                 </div>
+               <div data-role="footer" data-theme="a" data-position="fixed">
+                 <h4> Aplicacion Dos, RMCM</h4>
+               </div>
+                </div>
+              
+              
+ <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1>CLASIFICACION DE LOS TELEFONOS DE ACUERDO A SU GAMA  </h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                 <h2> Gama Baja: </h2>
+                  <h5> Son aquellos que poseen un uso muy limitado, incluso pueden llegar a cumplir la función de realizar llamadas. La pantalla de estos dispositivos carece de gran resolución y tamaño, siendo también en algunos equipos monocromática. los celulares de de gama baja son muy recomendados para gente de avanzada edad.</h5>
+                  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Foto  </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/nokia.png" width="50%" height="50%">
+           </div>
+          </div>
+         </div>
+
+<h2> Gama Media: </h2>
+<h5> Este grupo es el mas comercializado, debido a la buena relación costo-prestaciones, por lo general se adquiere este tipo de móviles por el motivo de querer escuchar música MP3.
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Foto  </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/telefono.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+ </h5>
+  <h2> Gama Alta: </h2>
+  <h5>Celulares para un publico que sabe lo que quiere, grandes prestaciones tales como GPS (posicionamiento global), Wifi (Internet inalámbrico) camara fotográfica superior a 3MP con excelente calidad y pantallas de gran resolución. </h5>
+<div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Foto  </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/iphone.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+         <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/gama.png',1)"><img src="imagenes/curvas.png" width="190" height="190" id="Image16"></a> </div>
+               </div>
+             <div data-role="footer" data-theme="a" data-position="fixed">
+              <h4> Aplicacion Dos, RMCM </h4>
+              </div>
+              </div>
+             
+             
+ <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+               <h1> Compañias en Mexico que manejan el servidor de telefonia celular  </h1>
+             </div>
+             <div data-role="content" align="center">
+               <div>
+                 <h2>Movistar: </h2>
+                 <h5> España, conocida simplemente como Movistar, es el primer operador de telefonía fija, telefonía móvil, televisión por suscripción (Movistar+) e internet (fibra y 4G</h5>
+                    <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> MOVISTAR  </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/movistar.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+                      <p><a href="http://www.movistar.com.mx/">http://www.movistar.com.mx/</a></p>
+                      <h2> Unefon: </h2>
+                  <h5> es una compañía mexicana de telefonía móvil propiedad de AT&T, la cual se dedica a ofrecer únicamente el esquema de cobro de prepago. Fue fundada por Ricardo Salinas Pliego en 1998 y perteneció a Grupo Salinas desde su fundación hasta 2014, cuando la marca fue adquirida por AT&T. </h5>
+                  
+                   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> UNEFON </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/unefon.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+                   <p><a href="https://www.unefon.com.mx">https://www.unefon.com.mx</a></p>
+                <h2> AT & T: </h2>
+                <h5>AT&T es una compañía estadounidense de telecomunicaciones. Provee servicios de voz, video, datos e Internet a negocios, clientes y agencias del gobierno </h5>
+                <center> 
+                  <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1>AT & T </h1>
+          <div>
+            <p> Esta es mi imagen: </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/ATT.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+                  <p><a href="https://www.att.com.mx">https://www.att.com.mx</a></p>
+<h2> Telcel: </h2>
+  <h5>Telcel es una marca propiedad de la empresa mexicana Radiomóvil DIPSA, S.A. de C.V.. Tiene presencia en todo México y se dedica a ofrecer servicios de telefonía móvil, telefonía fija, servicios de banda ancha, entre otros servicios </h5>
+ 
+                <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> TELCEL </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/telcellogo.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+                  <p><a href="http://www.telcel.com/">http://www.telcel.com/</a></p>
+                  <p>&nbsp;</p>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/fe.png',1)"><img src="imagenes/fa.png" width="231" height="218" id="Image17"></a> </div>
+              </div> 
+            <div data-role="footer" data-theme="a" data-position="fixed">
+              <h4> Aplicación Dos, RMCM</h4>
+             </div>
+             </div>
+             
+             
+ <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+             <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+               <h1> Telefonos del futuro  </h1>
+             </div>
+             <div data-role="content" align="center">
+              <div>
+                <h2> SE MOSTRARÁN ALGUNOS DE ELLOS  </h2> </div>
+               <h3>  * Pantallas Flexibles </h3>
+                <h5>Esto abriría la puerta a diseños impensables hasta ahora, dando lugar a smartphones o tablets capaces de doblarse o plegarse según nuestras necesidades.</h5>
+                <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Pantallas Flexibles </h1>
+          <div>
+            <p> Esta es mi imagen: </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/curvas.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+                <h3>  * Los diseños modulares se convertirán en el estándar </h3>
+                <H5> Proyectos como Ara están cerca de traernos un teléfono en el que podemos cambiar las piezas según nuestras necesidades. </H5>
+                <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Diseños modulares </h1>
+          <div>
+            <p> Esta es mi imagen : </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/proyecto.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+                <h3>  * Nuevas formas de autenticación </h3>
+                <h5> Códigos PIN, contraseñas, patrones de desbloqueo, sensores de huellas abajo, detrás o al lado. Estos son los métodos más comunes para autenticarnos en nuestro equipo. </h5>
+              <h3>  * Baterías más duraderas</h3>
+              <h5> se espera que tengamos mejores duraciones de batería en nuestros smartphones, sin un compromiso grande en el peso o la dimensión de los dispositivos. </h5> 
+               <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+          <h1> Bateria</h1>
+          <div>
+            <p> Esta es mi imagen: </p>
+            <br>
+          </div>
+          <div>
+            <img src="imagenes/bateria.png" width="25%" height="20%">
+           </div>
+          </div>
+         </div>
+               <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/ro.png',1)"><img src="imagenes/tu.png" width="190" height="190" id="Image18"></a> </div>
+               <div data-role="footer" data-theme="a" data-position="fixed">
+                 <h4> Aplicacion Dos, RMCM</h4>
+                 
+                 </div>
+                </div>
+               
+</body>
+</html>
